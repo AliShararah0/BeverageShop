@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Spline 3D Drinks Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.0/build/spline-viewer.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav> 
+  <div class="logo">Beverage Shopping</div>
+
+  <div class="menu-toggle" id="mobile-menu">☰</div>
+
+  <ul>
+    <li><a href="#featured-drinks">Home</a></li>
+    <li><a href="#drink-section">Order</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+
+    <li class="nav-search">
+      <a href="javascript:void(0)" id="searchToggle">Search</a>
+      <input type="text" id="searchInput" placeholder="Type to search..." />
+    </li>
+
+    <li class="nav-cart">
+      <a href="javascript:void(0)" id="cartToggle">Cart</a>
+      <div class="cart-dropdown">
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Price</th>
+              <th>Qty</th>
+              <th>Total</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <p class="empty-cart">Your cart is empty.</p>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+
+  <!-- Spline 3D Scene -->
+  <spline-viewer 
+      url="https://prod.spline.design/c78hmUPtQjTM0JzB/scene.splinecode"
+      allow-scroll="true">
+  </spline-viewer>
+
+
+
+<section class="featured-drinks" id="featured-drinks">
+  <h2>Featured Drinks</h2>
+  <div class="featured-cards-container">
+    <div class="featured-card">
+      <div class="image-container">
+        <img src="images/332818_main.webp" alt="Pepsi">
+        
+      </div>
+      <h3>Pepsi</h3>
+      <div class="order-controls">
+        
+      
+        
+      </div>
+    </div>
+    <div class="featured-card">
+      <div class="image-container">
+        <img src="images/1030-1.jpg" alt="Coca Cola">
+        
+      </div>
+      <h3>Coca Cola</h3>
+      <div class="order-controls">
+        
+     
+        
+      </div>
+    </div>
+    <div class="featured-card">
+      <div class="image-container">
+        <img src="images/Mountain-Dew-Soda-Pop-20oz-Bottles-Quantity-of-10_2ed829ba-b7a4-4ee8-b45d-631c0596a136.e1b4f658e4d083591d7af015e536698b.avif" alt="Fanta">
+        
+      </div>
+      <h3>Mountain Dew</h3>
+      <div class="order-controls">
+      
+        
+      </div>
+    </div>
+    <div class="featured-card">
+      <div class="image-container">
+        <img src="images/images.jpeg" alt="Sprite">
+  
+      </div>
+      <h3>Crush</h3>
+      <div class="order-controls">
+ 
+       
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+ 
+
+
+
+   <!-- Drinks Section -->
+  <section class="drinks-section" id="drink-section">
+  <h2>Our Bottled Drinks</h2>
+  <div class="cards-container">
+
+    <!-- 15 Drink Cards -->
+    <div class="card">
+      <div class="image-container">
+        <img src="images/2483792b-1111-48f9-992f-32ee1f4d4a7a_size3840_cropCenter.jpg" alt="Mirinda">
+        <div class="order-controls">
+          <button class="minus">-</button>
+          <span class="quantity">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+      <h3>Mirinda</h3>
+      <p class="price">$1.00</p>
+    </div>
+
+    <div class="card">
+      <div class="image-container">
+        <img src="images/images.jpeg" alt="Crush">
+        <div class="order-controls">
+          <button class="minus">-</button>
+          <span class="quantity">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+      <h3>Crush</h3>
+      <p class="price">$0.96</p>
+    </div>
+
+    <div class="card">
+      <div class="image-container">
+        <img src="images/1030-1.jpg" alt="Coca-Cola Bottle">
+        <div class="order-controls">
+          <button class="minus">-</button>
+          <span class="quantity">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+      <h3>Coca-Cola Bottle</h3>
+      <p class="price">$1.08</p>
+    </div>
+
+    <div class="card">
+      <div class="image-container">
+        <img src="images/332818_main.webp" alt="Pepsi">
+        <div class="order-controls">
+          <button class="minus">-</button>
+          <span class="quantity">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+      <h3>Pepsi</h3>
+      <p class="price">$1.04</p>
+    </div>
+
+    <div class="card">
+      <div class="image-container">
+        <img src="images/8851994112017-1-1745297324.623.webp" alt="Rock Soda">
+        <div class="order-controls">
+          <button class="minus">-</button>
+          <span class="quantity">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+      <h3>Rock Soda</h3>
+      <p class="price">$0.92</p>
+    </div>
+
+    <div class="card">
+      <div class="image-container">
+        <img src="images/672_main.avif" alt="Ice Tea Peach">
+        <div class="order-controls">
+          <button class="minus">-</button>
+          <span class="quantity">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+      <h3>Ice Tea Peach</h3>
+      <p class="price">$1.12</p>
+    </div>
+
+    <div class="card">
+      <div class="image-container">
+        <img src="images/Mountain-Dew-Soda-Pop-20oz-Bottles-Quantity-of-10_2ed829ba-b7a4-4ee8-b45d-631c0596a136.e1b4f658e4d083591d7af015e536698b.avif" alt="Mountain Dew">
+        <div class="order-controls">
+          <button class="minus">-</button>
+          <span class="quantity">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+      <h3>Mountain Dew</h3>
+      <p class="price">$1.04</p>
+    </div>
+
+    <div class="card">
+      <div class="image-container">
+        <img src="images/db364341_main.avif" alt="Dark Blue">
+        <div class="order-controls">
+          <button class="minus">-</button>
+          <span class="quantity">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+      <h3>Dark Blue</h3>
+      <p class="price">$0.96</p>
+    </div>
+
+    <div class="card">
+      <div class="image-container">
+        <img src="images/copy-of-red-bull-energy-drink-250ml-10182-1.webp" alt="Red Bull">
+        <div class="order-controls">
+          <button class="minus">-</button>
+          <span class="quantity">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+      <h3>Red Bull</h3>
+      <p class="price">$1.08</p>
+    </div>
+
+    <div class="card">
+      <div class="image-container">
+        <img src="images/71687_main.avif" alt="Boom Boom">
+        <div class="order-controls">
+          <button class="minus">-</button>
+          <span class="quantity">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+      <h3>Boom Boom</h3>
+      <p class="price">$0.88</p>
+    </div>
+
+    <div class="card">
+      <div class="image-container">
+        <img src="images/lunaice.jpeg" alt="Ice Coffee: Moca">
+        <div class="order-controls">
+          <button class="minus">-</button>
+          <span class="quantity">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+      <h3>Ice Coffee: Moca</h3>
+      <p class="price">$1.20</p>
+    </div>
+
+    <div class="card">
+      <div class="image-container">
+        <img src="images/lunaice2.jpeg" alt="Ice Coffee: Espresso">
+        <div class="order-controls">
+          <button class="minus">-</button>
+          <span class="quantity">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+      <h3>Ice Coffee: Espresso</h3>
+      <p class="price">$1.20</p>
+    </div>
+
+    <div class="card">
+      <div class="image-container">
+        <img src="images/Luna-Iced-Coffe-Originals-190ml.jpg" alt="Ice Coffee: Original">
+        <div class="order-controls">
+          <button class="minus">-</button>
+          <span class="quantity">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+      <h3>Ice Coffee: Original</h3>
+      <p class="price">$1.18</p>
+    </div>
+
+    <div class="card">
+      <div class="image-container">
+        <img src="images/Cappuccino-768x768.jpg" alt="Ice Coffee: Cappuccino">
+        <div class="order-controls">
+          <button class="minus">-</button>
+          <span class="quantity">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+      <h3>Ice Coffee: Cappuccino</h3>
+      <p class="price">$1.22</p>
+    </div>
+
+    <div class="card">
+      <div class="image-container">
+        <img src="images/espresso.webp" alt="Espresso Concentrate">
+        <div class="order-controls">
+          <button class="minus">-</button>
+          <span class="quantity">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+      <h3>Espresso Concentrate</h3>
+      <p class="price">$1.25</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<div class="section-divider"></div>
+
+
+
+
+
+
+
+
+  
+  <section class="carousel-section">
+    <div class="carousel-wrapper">
+      <button class="arrow left" aria-label="Previous">&#10094;</button>
+      <div class="carousel-viewport">
+        <div class="carousel-container">
+          <div class="carousel-card"><img src="boom.jpeg" alt="Drink 1"></div>
+          <div class="carousel-card"><img src="Crush_Soda_Logo_New.png" alt="Drink 2"></div>
+          <div class="carousel-card"><img src="darkblue.jpeg" alt="Drink 3"></div>
+          <div class="carousel-card"><img src="Mountain_Dew_2025_logo.svg.png" alt="Drink 4"></div>
+          <div class="carousel-card"><img src="images.png" alt="Drink 5"></div>
+          <div class="carousel-card"><img src="lipton-ice-tea-logo.jpg" alt="Drink 6"></div>
+          <div class="carousel-card"><img src="mirinda.jpg" alt="Drink 7"></div>
+          <div class="carousel-card"><img src="Pepsi-Logo-Old-Transparent.png" alt="Drink 8"></div>
+        </div>
+      </div>
+      <button class="arrow right" aria-label="Next">&#10095;</button>
+    </div>
+  </section>
+
+
+
+<!-- Footer -->
+<<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Logo -->
+    <div class="footer-logo">
+      <h2>BevShop</h2>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="#drink-section">Order</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-social">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/ali.shararahmak/"><img src="facebook-logo-facebook-icon-transparent-free-png-removebg-preview.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/alishararah_"><img src="instagram-removebg-preview.png" alt="Instagram"></a>
+        <a href="#"><img src="189a1fdfbe358e78b748df25013bd02a-removebg-preview.png" alt="Twitter"></a>
+      </div>
+    </div>
+
+    <!-- Bottom copyright -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 Beverage Shop.</p>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
